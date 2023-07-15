@@ -33,26 +33,26 @@ def get_filters():
 
     print('\n')
     # get user input for month (all, january, february, ... , june)
-    answered = False
-    while answered == False:
+    ans = False
+    while ans == False:
         try:
             month = str(input('Please choose a month from the following options:\nall, january, february, ... , june.\nWhat month would you like? ')).lower()
             if month not in ['all','january','february', 'march','april','may','june']:
                 print('\nSorry that is not a valid month. Please try again!\n')
             else:
-                answered = True
+                ans = True
         except:
             print('Sorry that is not a valid input. Please try again!')
     print('\n')
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    answered = False
-    while answered == False:
+    ans = False
+    while ans == False:
         try:
             day = str(input('Please choose a day from the following options:\nall, sunday, monday,...saturday.\nWhat day would you like? ')).lower()
             if day not in ['all','monday','tuesday','wednesday','thursday','friday','saturday','sunday']:
                 print('\nSorry that is not a valid day. Please try again!\n')
             else:
-                answered = True
+                ans = True
         except:
             print('Sorry that is not a valid input. Please try again!')
 
@@ -251,8 +251,8 @@ def main():
         user_stats(df)
         print_data(df)
 
-        restart = str(input('\nWould you like to restart? Enter yes or no.\n'))
-        if restart.lower() != 'yes':
+        again = str(input('\nWould you like to restart? Enter yes or no.\n'))
+        if again.lower() != 'yes':
             break
 
 
