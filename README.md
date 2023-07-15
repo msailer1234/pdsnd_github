@@ -15,7 +15,7 @@ This program allows for an interactive query of data from 3 cities for a bikesha
 
 There are only 2 python module dependencies: time and pandas. Please ensure you have these installed with your version of python. This code was written using python 3.
 
-To run this code. Just type python bikeshare_2.py in a linux command line while in the file's directory. 
+To run this code. Just type python bikeshare_2.py in a linux command line while in the file's directory. Makes sure these csv files are in this dircetory as well.
 
 ### Files used
 washington.csv, new_york_city.csv, and chicago.csv
