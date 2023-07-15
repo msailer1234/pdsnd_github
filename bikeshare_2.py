@@ -1,5 +1,5 @@
 import time
-#import pandas as pd
+import pandas as pd
 
 
 CITY_DATA = { 'chicago': 'chicago.csv',
